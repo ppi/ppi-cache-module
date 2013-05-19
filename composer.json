@@ -1,0 +1,34 @@
+{
+    "name": "noiselabs/ppi-cache-module",
+    "description": "PPI2 Cache component",
+    "homepage": "http://www.ppi.io",
+    "license": "MIT",
+    "keywords": ["ppi", "cache"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paul Dragoonis",
+            "email": "paul@ppi.io"
+        },
+        {
+            "name": "Vítor Brandão",
+            "email": "vitor@ppi.io"
+        },
+        {
+            "name": "PPI Community",
+            "homepage": "http://www.ppi.io/contributors"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/ppi",
+        "issues": "https://github.com/ppi/ppi-cache-module/issues"
+    },
+    "autoload": {
+        "psr-0": { "PPI\\CacheModule": "" }
+    },
+    "target-dir": "PPI/CacheModule",
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
