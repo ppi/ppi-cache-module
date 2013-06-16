@@ -9,7 +9,7 @@
  * @link        http://www.ppi.io
  */
 
-namespace PPICacheModule;
+namespace PPI\CacheModule;
 
 use PPI\Autoload;
 use PPI\Module\AbstractModule;
