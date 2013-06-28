@@ -54,7 +54,7 @@ class ApcCache implements CacheInterface
         $cacheValues = apc_fetch($keys, $exists);
 
         $ret = array();
-        foreach ($cacheValues as $key => value) {
+        foreach ($cacheValues as $key => $value) {
             // @todo - identify the value when a cache item is not found.
             $ret[$key] = new CacheItem($key, $value, true);
         }
