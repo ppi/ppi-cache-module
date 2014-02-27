@@ -108,7 +108,7 @@ class RedisCache implements CacheInterface
         return $this->redis->delete($key);
     }
 
-    public function removeMultple($keys)
+    public function removeMultiple($keys)
     {
         return $this->redis->delete($keys);
     }
