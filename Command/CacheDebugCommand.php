@@ -7,7 +7,7 @@
  * @link       http://www.ppi.io
  */
 
-namespace PPICacheModule\Command;
+namespace PPI\CacheModule\Command;
 
 use PPI\Console\Command\AbstractCommand;
 
