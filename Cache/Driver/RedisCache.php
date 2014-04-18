@@ -51,7 +51,7 @@ class RedisCache implements CacheInterface
      */
     public function set($key, $value = null, $ttl = null)
     {
-        return $this->redis->set($key, $value);
+        return $this->redis->set($key, $value, $ttl);
     }
 
     /**
