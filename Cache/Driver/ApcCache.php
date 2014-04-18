@@ -7,10 +7,10 @@
  * @link       http://www.ppi.io
  */
 
-namespace PPICacheModule\Cache\Driver;
+namespace PPI\CacheModule\Cache\Driver;
 
-use PPICacheModule\Cache\CacheInterface;
-use PPICacheModule\Cache\CacheItem;
+use PPI\CacheModule\Cache\CacheInterface;
+use PPI\CacheModule\Cache\CacheItem;
 
 /**
  * Apc cache driver.
@@ -23,7 +23,7 @@ class ApcCache implements CacheInterface
 {
     /**
      * @param  string                                             $key
-     * @return \PPICacheModule\Cache\CacheItemInterface|CacheItem
+     * @return \PPI\CacheModule\Cache\CacheItemInterface|CacheItem
      */
     public function get($key)
     {

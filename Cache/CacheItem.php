@@ -7,9 +7,9 @@
  * @link       http://www.ppi.io
  */
 
-namespace PPICacheModule\Cache;
+namespace PPI\CacheModule\Cache;
 
-use PPICacheModule\Cache\CacheItemInterface;
+use PPI\CacheModule\Cache\CacheItemInterface;
 
 /**
  * CacheItem.

@@ -7,7 +7,7 @@
  * @link       http://www.ppi.io
  */
 
-namespace PPICacheModule\Cache;
+namespace PPI\CacheModule\Cache;
 
 /**
  * CacheAwareInterface.

@@ -36,6 +36,6 @@ class Module extends AbstractModule
      */
     public function getName()
     {
-        return 'PPICacheModule';
+        return 'PPI\CacheModule';
     }
 }

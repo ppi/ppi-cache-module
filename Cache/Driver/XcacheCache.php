@@ -7,9 +7,9 @@
  * @link       http://www.ppi.io
  */
 
-namespace PPICacheModule\Cache\Driver;
+namespace PPI\CacheModule\Cache\Driver;
 
-use PPICacheModule\Cache\CacheInterface;
+use PPI\CacheModule\Cache\CacheInterface;
 
 /**
  * Memory cache driver.
