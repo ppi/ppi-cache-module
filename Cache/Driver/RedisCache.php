@@ -9,6 +9,7 @@
 
 namespace PPI\CacheModule\Cache\Driver;
 
+use PPI\CacheModule\Cache\CacheItem;
 use PPI\CacheModule\Cache\CacheInterface;
 
 /**
@@ -90,7 +91,7 @@ class RedisCache implements CacheInterface
 
         // No native TTL support for MSET so we use a transaction
         $transaction = $this->redis->multi();
-        foreach ($keys as $key => $val) {
+        foreach ($data as $key => $val) {
             $transaction->set($key, $val, $ttl);
         }
 
