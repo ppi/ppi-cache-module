@@ -67,8 +67,8 @@ class RedisCache implements CacheInterface
 
         $ret = array();
         foreach ($cacheValues as $key => $value) {
-        $isHit = $value === false;
-        $ret[$key] = new CacheItem($key, $value, $isHit);
+            $isHit = $value === false;
+            $ret[$key] = new CacheItem($key, $value, $isHit);
         }
 
         return $ret;
