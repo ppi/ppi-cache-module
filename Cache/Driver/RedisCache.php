@@ -42,6 +42,20 @@ class RedisCache implements CacheInterface
     }
 
     /**
+     * For data stored with a key in a hash, check its hash/key exists then fetch it
+     *
+     * @param string $cacheHash
+     * @param string $key
+     * @return \PPI\CacheModule\Cache\CacheItem
+     */
+    public function getWithHash($cacheHash, $key)
+    {
+        list($exists, $value) = $this->redis->multi()->hExists($cacheHash, $key)->hGet($cacheHash, $key)->exec();
+
+        return new CacheItem($key, $value, $exists);
+    }
+
+    /**
      * Set a value in the cache.
      *
      * @param  string $key   The unique key for the cache item
@@ -52,6 +66,22 @@ class RedisCache implements CacheInterface
     public function set($key, $value = null, $ttl = null)
     {
         return $this->redis->set($key, $value, $ttl);
+    }
+
+    /**
+     * Set a value in the cache for a key and within a hash
+     *
+     * @param string $cacheHash
+     * @param string $key
+     * @param string $value
+     * @param  $ttl
+     * @return mixed 1 if value didn't exist and was added successfully,
+     *              0 if the value was already present and was replaced,
+     *              FALSE if there was an error.
+     */
+    public function setWithhash($cacheHash, $key, $value = null)
+    {
+        return $this->redis->hSet($cacheHash, $key, $value);
     }
 
     /**
