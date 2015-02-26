@@ -24,11 +24,11 @@
         "issues": "https://github.com/ppi/ppi-cache-module/issues"
     },
     "autoload": {
-        "psr-0": { "PPI\\CacheModule": "" }
+        "psr-4": { "PPI\\CacheModule\\": "src/" }
     },
     "target-dir": "PPI/CacheModule",
     "minimum-stability": "dev",
     "require": {
-
+        "ppi/framework": "dev-develop"
     }
 }
