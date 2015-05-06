@@ -28,6 +28,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "ppi/framework": "dev-develop"
+        "ppi/framework": "dev-master"
     }
 }
