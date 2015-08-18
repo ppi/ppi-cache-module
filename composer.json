@@ -26,5 +26,8 @@
     "autoload": {
         "psr-4": { "PPI\\CacheModule\\": "src/" }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "ppi/framework": "~2.1.0-alpha2"
+    }
 }
