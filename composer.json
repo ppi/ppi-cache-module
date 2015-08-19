@@ -28,6 +28,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "ppi/framework": "dev-master"
+        "ppi/framework": "~2.1.0-alpha2"
     }
 }
